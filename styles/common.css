@@ -22,12 +22,12 @@ h6 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 400px;
+    height: 500px;
     margin-top: -4px;
 }
 
 .footer>.logo-footer img {
-    width: 180px;
+    width: 250px;
     height: 100%;
     /* filter: brightness(50%); */
     opacity: 0.5;
@@ -36,20 +36,32 @@ h6 {
 .footer>.footer-phone-hours span {
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 1em;
+    font-size: 1.2em;
     letter-spacing: 2px;
 }
 
 .footer>.footer-phone-hours>.hours {
     font-size: 0.8em;
-    color: #cea135;
-    text-transform: uppercase;
+    color: #cea135;    
 }
 
 .footer>.links-wrapper {
     margin-top: 40px;
     margin-bottom: 40px;
     width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer > .links-wrapper > .nav-link a {
+    color: cbcbcb;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.footer > .links-wrapper > .nav-link a:hover {
+    color: #cea135
 }
 
 .footer>.social-media-icons-wrapper {
@@ -63,6 +75,7 @@ h6 {
 .footer>.social-media-icons-wrapper a {
     font-size: 1.5em;
     color: #cbcbcb;
+    text-decoration: none;
     transition: 0.5s;
 }
 
@@ -112,6 +125,15 @@ h6 {
     align-items: center;
 }
 
+.skewed-header > .skewed-header-wrapper > .skewed-header-content > .links-wrapper {
+    display: flex;
+}
+
+.skewed-header > .skewed-header-wrapper > .skewed-header-content > .links-wrapper > .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .skewed-header > .skewed-header-wrapper > .skewed-header-content > .heading-wrapper {
     background-color: #cea135;
     color: #11122b;
@@ -121,3 +143,60 @@ h6 {
     padding: 10px;
     text-align: center;
 }
+
+/* page container sytyles */
+.page-container {
+    display: flex;
+    justify-content: center;
+}
+
+.content-wrapper {
+    width: 1000px;
+}
+
+.content-wrapper  > #chef {
+    width: 350px;
+    margin: 25px 40px 30px 0px;
+    float: left;
+    border: 1px solid #cea135;
+}
+
+.content-wrapper p {
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+/* square grid styles */
+.squares-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.squares-wrapper > .squares {
+    width: 1000px;
+}
+
+.squares-wrapper > .squares > .square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -4px;
+}
+
+.square > .img-wrapper img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.square > .square-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+     flex-direction: column;
+     padding: 42px;  
+}
+
+.square > .square-text-wrapper h1 {
+    color: #cea135;
+}
+
